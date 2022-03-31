@@ -1,6 +1,6 @@
 .container-width{
     display: grid;
-    grid-template-columns: 4fr 2fr;
+    grid-template-columns: 2fr 4fr;
     margin: 50px 0;
 }
 
