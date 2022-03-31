@@ -8,13 +8,13 @@ const Products = () => {
             <div className="row row-cols-1 row-cols-md-3 g-4">
                 <div className="col">
                     <div className="card h-100">
-                        <img src="..." className="card-img-top" alt="...">
+                        <img src="..." className="card-img-top" alt="Headphones"/>
                         <div className ="card-body">
-                        <h5 className ="card-title">Card title</h5>
-                        <p className ="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.This card has even longer content than the first to show that equal height action.</p>
+                        <h5 className ="card-title">Name</h5>
+                        <h6 className ="card-title">Price : $</h6>
                         </div>
                         <div className ="card-footer">
-                        <small className ="text-muted">Last updated 3 mins ago</small>
+                        <button className="btn btn-primary">Add to Cart</button>
                         </div>
                     </div>
                 </div>
