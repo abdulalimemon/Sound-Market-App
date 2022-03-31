@@ -3,10 +3,17 @@
     grid-template-columns: 2fr 4fr;
     margin: 50px 0;
 }
-
+.cart-area{
+    padding: 0px 30px;
+}
 
 @media only screen and (max-width: 688px){
     .container-width{
         grid-template-columns: 1fr;
     }
+    .cart-area{
+        margin-bottom: 30px;
+        padding: 0px 5px;
+    }
+    
 }

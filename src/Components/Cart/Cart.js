@@ -1,3 +1,5 @@
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import "./Cart.css";
 
@@ -14,10 +16,10 @@ const Cart = () => {
             </div>
             <div className="cart-btn">
                 <div className="">
-                    <button className="btn btn-primary btn-cart"></button>
+                    <button className="btn btn-primary btn-cart">Select One</button>
                 </div>
-                <div className="">
-                    <button className="btn btn-primary btn-cart"></button>
+                <div className="cart-btn">
+                    <button className="btn btn-primary btn-cart">Clear Cart<span className="btn-icon"><FontAwesomeIcon icon={faTrash}></FontAwesomeIcon></span></button>
                 </div>
             </div>
         </div>

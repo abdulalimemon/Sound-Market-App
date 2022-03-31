@@ -1,0 +1,29 @@
+.cart{
+    background-color: #FFD93D;
+    padding: 15px;
+    border: 1px;
+    border-radius: 10px;
+    position: sticky;
+    top: 30px;
+}
+.cart-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cart-image img{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+.cart-btn{
+    margin-top: 10px;
+}
+.btn-cart{
+    width: 100%;
+    font-size: 17px;
+    font-weight: 600;
+}
+.btn-cart .btn-icon{
+    margin-left: 10px;
+}

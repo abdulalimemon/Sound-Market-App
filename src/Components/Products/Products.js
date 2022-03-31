@@ -14,7 +14,7 @@ const Products = (props) => {
                     <img src={picture} className="card-img-top py-3" alt="Headphones" />
                     <div className="card-body">
                         <h5 className="card-title">{name}</h5>
-                        <h6 className="card-title">Price : ${price}</h6>
+                        <h6 className="card-title">Price : {price}</h6>
                     </div>
                     <div className="card-footer">
                         <button className="btn btn-primary btn-cart">Add to Cart <span className="btn-icon"> <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon></span></button>
