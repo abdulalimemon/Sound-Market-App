@@ -1,4 +1,4 @@
 # Sound-Market
 
-Project Live Link [Sound-Market App](https://github.com/facebook/create-react-app).
+Project Live Link [Sound-Market App](https://p-6.netlify.app/).
 
