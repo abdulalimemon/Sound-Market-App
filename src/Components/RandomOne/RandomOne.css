@@ -1,4 +1,8 @@
-
+.random-cart{
+    padding: 15px;
+    border: 1px;
+    border-radius: 10px;
+}
 .cart-item{
     display: flex;
     align-items: center;
@@ -10,15 +14,4 @@
 }
 .cart-title {
     margin-left: 15px;
-}
-.cart-btn{
-    margin-top: 10px;
-}
-.btn-cart{
-    width: 100%;
-    font-size: 17px;
-    font-weight: 600;
-}
-.btn-cart .btn-icon{
-    margin-left: 10px;
 }

@@ -6,7 +6,14 @@
 .cart-area{
     padding: 0px 30px;
 }
-
+.cart{
+    background-color: #FFD93D;
+    padding: 15px;
+    border: 1px;
+    border-radius: 10px;
+    position: sticky;
+    top: 30px;
+}
 @media only screen and (max-width: 688px){
     .container-width{
         grid-template-columns: 1fr;

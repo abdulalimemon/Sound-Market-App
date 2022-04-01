@@ -4,22 +4,19 @@ import React from 'react';
 import "./Cart.css";
 
 const Cart = (props) => {
-    const { cart } = props;
+    const { cart, clearCart, selectOne } = props;
 
-
-    
     return (
-        <div className="cart">
+        <div>
             {
-                cart.slice(0,4).map(product => <CartItem picture={product.picture} name={product.name}></CartItem>)
+                cart.slice(0, 4).map(product => <CartItem picture={product.picture} name={product.name} key={product.id}></CartItem>)
             }
-
             <div className="cart-btn">
                 <div className="">
-                    <button className="btn btn-primary btn-cart">Select One</button>
+                    <button onClick={selectOne} className="btn btn-primary btn-cart">Select One</button>
                 </div>
                 <div className="cart-btn">
-                    <button className="btn btn-primary btn-cart">Clear Cart<span className="btn-icon"><FontAwesomeIcon icon={faTrash}></FontAwesomeIcon></span></button>
+                    <button onClick={clearCart} className="btn btn-primary btn-cart">Clear Cart<span className="btn-icon"><FontAwesomeIcon icon={faTrash}></FontAwesomeIcon></span></button>
                 </div>
             </div>
         </div>
