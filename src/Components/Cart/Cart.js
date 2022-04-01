@@ -3,17 +3,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import "./Cart.css";
 
-const Cart = () => {
+const Cart = (props) => {
+    const { cart } = props;
+
+
+    
     return (
         <div className="cart">
-            <div className="cart-item">
-                <div className="cart-image">
-                    <img src="" alt="Product" />
-                </div>
-                <div className="cart-title">
-                    <h5>hello</h5>
-                </div>
-            </div>
+            {
+                cart.slice(0,4).map(product => <CartItem picture={product.picture} name={product.name}></CartItem>)
+            }
+
             <div className="cart-btn">
                 <div className="">
                     <button className="btn btn-primary btn-cart">Select One</button>
@@ -25,5 +25,20 @@ const Cart = () => {
         </div>
     );
 };
+
+function CartItem(props) {
+    return (
+        <div className="cart-item py-2">
+            <div className="cart-image">
+                <img src={props.picture} alt="Product" />
+            </div>
+            <div className="cart-title">
+                <h5>{props.name}</h5>
+            </div>
+        </div>
+    )
+}
+
+
 
 export default Cart;

@@ -5,8 +5,8 @@ import "./Products.css";
 
 
 const Products = (props) => {
-    const { product } = props;
-    const { name, id, price, picture } = product;
+    const { product, addToCart } = props;
+    const { name, price, picture } = product;
     return (
         <div>
             <div className="col">
@@ -17,7 +17,7 @@ const Products = (props) => {
                         <h6 className="card-title">Price : {price}</h6>
                     </div>
                     <div className="card-footer">
-                        <button className="btn btn-primary btn-cart">Add to Cart <span className="btn-icon"> <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon></span></button>
+                        <button onClick={() => addToCart(product)} className="btn btn-primary btn-cart">Add to Cart <span className="btn-icon"> <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon></span></button>
                     </div>
                 </div>
             </div>

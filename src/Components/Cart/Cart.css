@@ -8,13 +8,15 @@
 }
 .cart-item{
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 .cart-image img{
     width: 56px;
     height: 56px;
     border-radius: 50%;
+}
+.cart-title {
+    margin-left: 15px;
 }
 .cart-btn{
     margin-top: 10px;
